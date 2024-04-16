@@ -4,43 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Website</title>
-  <link href="style.css" rel="stysheet">
+  <link href="style.css" rel="stylesheet">
+ 
+  
 </head>
 <body>
   <nav>
-    <h1>Jessie Zhang</h1>
-    <div>
-      <ul>
-        <a href="#"><li>About Me</li></a>
-        <a href="#"><li>Projects</li></a>
-        <a href="#"><li>Skills</li></a>
-        <a href="#"><li>Contact</li></a>
-      </ul>
-    </div>
+    <h1>Jessie Zhang</h1>   
+    <ul class="navigation-items">
+      <li class="navigation-item">About Me</li>
+      <li class="navigation-item">Projects</li>
+      <li class="navigation-item">Skills</li>
+      <li class="navigation-item">Contact</li>
+      <button id="mode-toggle">Toggle Mode</button>
+    </ul>
   </nav>
-  <section class="about-me">
-    <h2>About me</h2>
-    <p>Hi, I'm Jessie, a software engineer. Experience in programming languages such as JavaScript, Python and React, with a keen interest in software development. Excellent problem-solving skills coupled with a strong desire to learn and grow within a dynamic IT environment. Committed to contributing positively to the team and organization while continuously expanding skills and expertise.</p>
-    <img src="#" alt="Photo of Jessie" />
-  </section>
-  <section class="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>The tea cozy</li>
-      <li>Portfolio Website</li>
-      <li>Responsive Website</li>
-    </ul>>
-  </section>
-  <section class="skills">
-    <img src="./img/logo-2582748_1280.png" width="70" alt="html logo" />
-    <img src="./img/logo-css.png" width="70" alt="css logo" />
-    <img src="./img/javascript-736400_1280.png" width="70" alt="javascript logo" />
-    <img src="./img/react-1-logo-png-transparent.png" width="70"/>
-    <img src="./img/git logo.png" width="70" alt="git logo" />
-    <img src="./img/github logo.png" width="70" alt="github logo" />
-    <img src="./img/nodejs logo.png" width="70" alt="nodejs logo" />
-    <img src="./img/Python-logo-notext.svg.png" width="70" alt="python logo" />
-  </section>
-  
+
+  <main>
+    <section class="about-me">
+      <div class="about-me-container">
+        <div class="about-me-text-container">
+          <h2>About me</h2>
+          <p>Hi, I'm Jessie, a software engineer. Experience in programming languages such as JavaScript, Python and React, with a keen interest in software development.</p>
+          <p>A good understanding of HTML5 and CSS3. Excellent problem-solving skills coupled with a strong desire to learn and grow within a dynamic IT environment.</p>
+          <p>Committed to contributing positively to the team and organization while continuously expanding skills and expertise.</p>
+          <p>Fun fact about me that I used to be a teacher!
+          </p>
+        </div>
+        <img src="./img/Jessie.JPG" class="author-img" alt="Photo of Jessie" width="150" id="imgClickAndChange" onclick="changeImage()"/>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>The tea cozy</li>
+        <li>Portfolio Website</li>
+        <li>Tindog</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2 class="skill">Skills</h2>
+      <div class="skill-container"> 
+        <img src="./img/logo-2582748_1280.png" width="70" alt="html logo" />
+        <img src="./img/logo-css.png" width="70" alt="css logo" />
+        <img src="./img/javascript-736400_1280.png" width="70" alt="javascript logo" />
+        <img src="./img/react-1-logo-png-transparent.png" width="70"/>
+        <img src="./img/git logo.png" width="70" alt="git logo" />
+        <img src="./img/github logo.png" width="70" alt="github logo" />
+        <img src="./img/nodejs logo.png" width="70" alt="nodejs logo" />
+        <img src="./img/Python-logo-notext.svg.png" width="70" alt="python logo" />
+    </div>
+    </section>
+
+    <section class="contact-me">
+      <h2>Contact me</h2>
+      <p>Have an intresting project? I would love to hear about it</p>
+      <a href="https://www.linkedin.com/notifications/?filter=all"><img src="./img/linkedin.jpeg" width="50"/></a>
+      <a href=mailto:"zhangqian006@gmail.com"><img src="./img/gmail.png" width="35"/></a>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
